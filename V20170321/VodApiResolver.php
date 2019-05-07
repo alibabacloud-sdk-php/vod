@@ -8,8 +8,10 @@ use AlibabaCloud\Rpc;
 /**
  * Resolve Api based on the method name.
  *
+ * @method GetUploadDetails getUploadDetails(array $options = [])
  * @method DeleteMultipartUpload deleteMultipartUpload(array $options = [])
  * @method MoveAppResource moveAppResource(array $options = [])
+ * @method DescribeVodTranscodeData describeVodTranscodeData(array $options = [])
  * @method ListAppInfo listAppInfo(array $options = [])
  * @method DeleteAppInfo deleteAppInfo(array $options = [])
  * @method UpdateAppInfo updateAppInfo(array $options = [])
@@ -142,6 +144,24 @@ class V20170321Rpc extends Rpc
  * @method $this withResourceOwnerId($value)
  * @method string getResourceOwnerAccount()
  * @method $this withResourceOwnerAccount($value)
+ * @method string getResourceRealOwnerId()
+ * @method $this withResourceRealOwnerId($value)
+ * @method string getMediaIds()
+ * @method $this withMediaIds($value)
+ * @method string getOwnerId()
+ * @method $this withOwnerId($value)
+ * @method string getMediaType()
+ * @method $this withMediaType($value)
+ */
+class GetUploadDetails extends V20170321Rpc
+{
+}
+
+/**
+ * @method string getResourceOwnerId()
+ * @method $this withResourceOwnerId($value)
+ * @method string getResourceOwnerAccount()
+ * @method $this withResourceOwnerAccount($value)
  * @method string getOwnerAccount()
  * @method $this withOwnerAccount($value)
  * @method string getResourceRealOwnerId()
@@ -174,6 +194,24 @@ class DeleteMultipartUpload extends V20170321Rpc
  * @method $this withResourceIds($value)
  */
 class MoveAppResource extends V20170321Rpc
+{
+}
+
+/**
+ * @method string getStartTime()
+ * @method $this withStartTime($value)
+ * @method string getEndTime()
+ * @method $this withEndTime($value)
+ * @method string getSpecification()
+ * @method $this withSpecification($value)
+ * @method string getOwnerId()
+ * @method $this withOwnerId($value)
+ * @method string getBucket()
+ * @method $this withBucket($value)
+ * @method string getRegion()
+ * @method $this withRegion($value)
+ */
+class DescribeVodTranscodeData extends V20170321Rpc
 {
 }
 

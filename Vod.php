@@ -5,8 +5,8 @@ namespace AlibabaCloud\Vod;
 use AlibabaCloud\Client\Resolver\VersionResolver;
 
 /**
- * @deprecated
+ * @method static V20170321\VodApiResolver v20170321()
  */
-class VodVersion extends VersionResolver
+class Vod extends VersionResolver
 {
 }
